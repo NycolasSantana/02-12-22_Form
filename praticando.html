@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <style>
+        @charset "UTF-8";
+        :root {
+            --sombra: rgba(0, 0, 0, 0.200);
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            height: 30vh;
+            width: 50vw;
+            background-color: rgb(0, 255, 136);
+            box-shadow: 2px 2px 5px var(--sombra);
+            margin: auto;
+            margin-top: 3%;
+            padding: 50px;
+            border-radius: 10px;
+            border: 1px rgba(0, 0, 0, 0.500) solid;
+        }
+        input {
+            display: block;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 1px 1px 5px var(--sombra);
+            margin: auto;
+        }
+        p {
+            text-align: center;
+        }
+        #psenha {
+            margin-top: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" autocomplete="off">
+            <p id="pusuario"><label for="inome"><strong>USUÁRIO</strong> <i style="color: rgb(248, 88, 88);">*</i></label><input type="text" name="nome" id="inome"></p>
+            <p id="psenha"><label for="isenha"><strong>SENHA</strong> <i style="color: rgb(248, 88, 88);">*</i></label><input type="text" name="senha" id="isenha"></p>
+        </form>
+    </main>
+</body>
+</html>
